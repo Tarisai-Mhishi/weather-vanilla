@@ -10,16 +10,16 @@ function updateWeather(response) {
   let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = Math.round(temperature);
+  timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windSpeedElement.innerHTML = `${response.data.wind - speed}km/h`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
-  timeElement.innerHTML = formatDate(date);
 }
 function formatDate(date) {
-  let minutes = date.getminutes();
-  let hours = date.hours();
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
@@ -32,7 +32,7 @@ function formatDate(date) {
   let day = days[date.getDay()];
 
   if (minutes < 10) {
-    minutes = `0 ${minutes}`;
+    minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
 }
@@ -50,5 +50,5 @@ function handleSearch(event) {
 }
 let searchFormElement = document.querySelector("#search");
 searchFormElement.addEventListener("submit", handleSearch);
-
+`78`;
 searchCity("London");
