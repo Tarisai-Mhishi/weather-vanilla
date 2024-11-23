@@ -67,9 +67,9 @@ function showForecast(response) {
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
-      forecastHtml =
-        forecastHtml +
-        `
+      forecastHtml += `
+        
+        
         
       
   <div class="weather-forecast-day">
