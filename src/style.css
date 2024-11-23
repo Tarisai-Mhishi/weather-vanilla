@@ -56,13 +56,13 @@ main {
   display: flex;
 }
 
-.weather-app-unit{
-margin-top: 5px ;
-font-size: 28px;
+.weather-app-unit {
+  margin-top: 5px;
+  font-size: 28px;
 }
-.weather-app-icon{
+.weather-app-icon {
   width: 90px;
-  height:90px;
+  height: 90px;
 }
 .weather-app-contents {
   display: flex;
@@ -94,7 +94,7 @@ font-size: 28px;
 .weather-forecast-temperatures {
   text-align: center;
   margin-top: 10px;
-  color: pink;
+  color: rgb(230, 10, 47);
   display: flex;
   justify-content: center;
 }
@@ -107,3 +107,4 @@ footer {
   text-align: center;
   font-size: 14px;
   color: rgba(0 0 0 0.8);
+}
