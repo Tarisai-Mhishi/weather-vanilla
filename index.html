@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>Weather App</title>
+    <title>My Vanilla App</title>
   </head>
   <body>
     <div class="weather-application">
@@ -20,6 +20,7 @@
     required
     id="search-input" 
     class ="search-form-input"/>
+
     <input type="submit" value="Search" class="search-form-button"/>
 </form>
     </header>
@@ -35,16 +36,13 @@
 </p>
 </div>
 <div class="weather-app-temp">
-    <div class="weather-app-icon"> ⛅</div>
-    <div class="weather-app-temp-value" id="temperature">12 </div>
+    <div id="icon"></div>
+    <div class="weather-app-temp-value" id="temperature"></div>
     <div class="weather-app-unit">°C</div>
     </div>
     </div>
 
     <div class="weather-forecast" id ="forecast"></div>
-       
-
-          
     </main>
     <footer>
       This project was compiled by
